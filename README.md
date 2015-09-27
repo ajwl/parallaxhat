@@ -1,4 +1,4 @@
 # parallaxhat
 Parallax site, in CSS only
 
-My attempt at a parallax effects on a simple site, done in CSS only to reduce browser load.
+Parallax effects done in CSS only. Hats done in photoshop.
