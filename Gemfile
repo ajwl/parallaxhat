@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'serve', :git => "git://github.com/tka/serve.git"
 gem 'thin'
+gem 'puma'
 # Use edge instead:
 # gem 'serve', :git => 'git://github.com/jlong/serve.git'
 
