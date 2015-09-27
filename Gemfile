@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 gem 'serve', :git => "git://github.com/tka/serve.git"
 gem 'thin'
 # Use edge instead:
