@@ -1,0 +1,158 @@
+<!DOCTYPE = HTML>
+
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Am I wearing a silly hat? 
+  </title>
+  <link href="assets/css/debug.css" rel="stylesheet" type="text/css"/>
+  <style>
+ /*------PARALLAX STYLING---*/ 
+  .parallax {
+  	perspective: 1px;
+  	-webkit-perspective: 1px;
+  	height: 100vh;
+  	overflow-x: hidden;
+  	overflow-y: auto;
+    font-size: 200%;
+  }
+  .parallax_layer {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+    padding-top: 300vh;
+    padding-bottom: 1vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .parallax_layer--top {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .parallax_layer--base {
+  	-webkit-transform: translateZ(-1px) scale(0.35);
+  	transform: translateZ(-1px) scale(0.35);
+  }
+  .parallax_layer--back {
+  	-webkit-transform: translateZ(-5px) scale(1.5);
+  	transform: translateZ(-5px) scale(2);
+  }
+  .parallax_layer--deep {
+  -webkit-transform: translateZ(-10px) scale(15);
+  transform: translateZ(-10px) scale(15);
+  }
+  .parallax_group {
+  	position: relative;
+  	height: 160vh;
+  	transform-style: preserve-3d;
+  }
+
+ /*------GENERAL STYLING---*/ 
+ * {
+ 	margin:0;
+ 	padding:0;
+ }
+ body {
+ 	font: 100% / 1.5 Arial;
+ }
+
+  .title {
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .anika {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+  }
+  .info {
+    position: absolute;
+    z-index:100;
+    bottom: 1vh;
+    top: auto;
+    font-size:80%;
+    text-align:left;
+    width: 100%;
+    padding-left: 5em;
+  }
+  .title p{
+    font-size:0.6em;
+    text-align: center;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="info">
+      A ajwl creation
+    </p>
+  </div>
+
+  <div class="parallax">
+
+    <div id="top" class="parallax_group">
+      <div class="parallax_layer parallax_layer--top">
+        <p class="anika">
+          Am I wearing a silly hat?
+        </p>
+      </div>
+    </div>
+
+    <div class="parallax_group">
+      <div class="parallax_layer parallax_layer--deep">
+        <div class="anika">
+          <img src="assets/img/anika.png" style="padding-left:1em;">
+        </div>
+      </div>
+    </div>
+
+  	<div class="parallax_group">
+	  	<div class="paralllax_layer parallax_layer--base">
+	  	  <div class="title">
+	  	  	<img src="assets/img/bowler_hat.png">
+	  	  </div>
+	  	</div>
+    </div>
+
+    <div class="parallax_group">
+	  	<div class="parallax_layer parallax_layer--base">
+	  	  <div class="title">
+	  	  	<img src="assets/img/deerstalker.png" style="padding-left:1em">
+	  	  </div>	
+	  	</div>
+    </div>
+
+    <div class="parallax_group">
+      <div class="parallax_layer parallax_layer--base">
+        <div class="title" style="padding-left:2em">
+          <img src="assets/img/pink_sombrero.png">
+        </div>  
+      </div>
+    </div>
+
+    <div class="parallax_group">
+      <div class="parallax_layer parallax_layer--top">
+        <div class="title">
+          <p>
+            What's wrong with pink sombreros?
+          </p>
+        </div>  
+      </div>
+    </div>
+	  	
+  </div>
+
+</body>
+</html>
